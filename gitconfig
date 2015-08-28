@@ -1,0 +1,32 @@
+[user]
+	name = Derek Barber
+	email = db@derekbarber.ca
+[color]
+  diff = auto
+	status = auto
+	branch = auto
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[apply]
+	whitespace = nowarn
+[github]
+	user = derekbarber
+	token = 5e8cf4ec4d1579a4f8b81789e6e9d104
+[heroku]
+	account = personal
+[core]
+  editor = vim --noplugin
+  excludesfile = ~/.gitignore
+[help]
+  autocorrect = 1
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always
+[push]
+  default = current
