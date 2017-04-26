@@ -1,18 +1,28 @@
-[user]
-	name = Derek Barber
-	email = db@derekbarber.ca
 [color]
-  diff = auto
-	status = auto
-	branch = auto
+  ui = true
 [alias]
   co = checkout
   ci = commit
   st = status
   br = branch
+  dc = diff --word-diff --cached --color-words
+  df = diff --word-diff --color-words
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   type = cat-file -t
   dump = cat-file -p
+  sl = log --oneline --decorate --graph -20
+  sla = log --oneline --decorate --graph --all -20
+  uncommit = reset --soft HEAD^
+  unstage = reset
+[user]
+  name = Derek Barber
+  email = db@derekbarber.ca
+[push]
+  default = upstream
+[merge]
+  ff = only
+[fetch]
+  prune = true
 [apply]
 	whitespace = nowarn
 [github]
@@ -28,5 +38,5 @@
 [branch]
   autosetupmerge = true
   autosetuprebase = always
-[push]
-  default = current
+[pull]
+	rebase = true
