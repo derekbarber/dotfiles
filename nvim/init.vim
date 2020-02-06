@@ -287,12 +287,6 @@ set clipboard=unnamed
 " map Clap files to ctrl+p
 nnoremap <C-P> :Clap files<CR>
 
-" YouCompleteMeMappings
-nnoremap ,gt    :YcmCompleter GetType<CR>
-nnoremap ,dl    :YcmCompleter GoToDeclaration<CR>
-nnoremap ,df    :YcmCompleter GoToDefinition<CR>
-nnoremap ,#     :YcmCompleter GoToReferences<CR>
-"
 "
 " " Easier split navigations
 
